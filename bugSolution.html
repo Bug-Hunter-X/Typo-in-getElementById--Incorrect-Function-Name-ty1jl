@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be hidden.
+  </div>
+  <script>
+    // Correct way to access the element.
+    let div = document.getElementById("myDiv");
+    if (div) {
+      div.style.display = "none";
+    }
+  </script>
+</body>
+</html>
