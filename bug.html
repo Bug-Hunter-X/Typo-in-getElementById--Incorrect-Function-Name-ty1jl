@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    // Incorrect way to access the element.
+    let div = document.getElementByIdx("myDiv");
+    if (div) {
+      div.style.display = "none";
+    }
+  </script>
+</body>
+</html>
